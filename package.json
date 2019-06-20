@@ -11,12 +11,12 @@
     "lint": "eslint **/*.js",
     "validate": "npm run lint && npm test",
     "test": "jasmine ./test/test.js",
-    "prebuild": "prebuild --all --strip --verbose",
+    "prebuild": "prebuild -r electron -t v4.1.1 --strip --debug",
     "rebuild": "node-gyp rebuild"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/MadLittleMods/node-usb-detection.git"
+    "url": "git://github.com/kerlends/node-usb-detection.git"
   },
   "keywords": [
     "usb",
